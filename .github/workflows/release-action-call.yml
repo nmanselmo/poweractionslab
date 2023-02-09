@@ -1,5 +1,5 @@
 name: release-action-call
-# Call the reusable workflow release-solution-to-test-with-inputs.yml.yml
+# Call the reusable workflow release-solution-to-prod-with-inputs.yml.yml
 # Release your solution to prod when you create a new release.
 
 on:
@@ -8,13 +8,13 @@ on:
 
 jobs:
   Release-solution-ALMLab:
-    uses: ./.github/workflows/release-solution-to-test-with-inputs.yml
+    uses: ./.github/workflows/release-solution-to-prod-with-inputs.yml
     with:
       #You can specify the solution name here
       solution_name: KaplanALMApp
       #Update your values here
       BUILD_ENVIRONMENT_URL: https://kaplandev.crm.dynamics.com
-      TEST_ENVIRONMENT_URL: https://kaplantest.crm.dynamics.com
+      PROD_ENVIRONMENT_URL: https://kaplantest.crm.dynamics.com
       CLIENT_ID: dc17a2d1-4c56-459d-b055-6fc05e6346cc
       TENANT_ID: fe04995f-e9b4-4993-b50a-cacce60d6b5e     
     secrets:
