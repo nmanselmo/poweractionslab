@@ -8,10 +8,10 @@ on:
 
 jobs:
   Release-solution-ALMLab:
-    uses: ./.github/workflows/release-solution-with-inputs.yml
+    uses: ./.github/workflows/release-solution-to-test-with-inputs.yml
     with:
       #You can specify the solution name here
-      solution_name: ALMLab
+      solution_name: KaplanALMApp
       #Update your values here
       BUILD_ENVIRONMENT_URL: https://kaplandev.crm.dynamics.com
       TEST_ENVIRONMENT_URL: https://kaplantest.crm.dynamics.com
