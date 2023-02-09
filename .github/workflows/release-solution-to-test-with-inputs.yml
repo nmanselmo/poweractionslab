@@ -11,7 +11,7 @@ on:
       solution_name:
         description: 'The solution name.'
         type: string
-        default: ALMLab       
+        default: KaplanALMApp       
       solution_shipping_folder:
         description: 'folder name for staging the exported solution *do not change*'        
         type: string
@@ -33,7 +33,7 @@ on:
         type: string
         required: true      
       PRODUCTION_ENVIRONMENT_URL: 
-        description: 'Production environment url.'
+        description: 'test environment url.'
         type: string
         required: true
       CLIENT_ID: 
